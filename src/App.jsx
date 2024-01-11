@@ -6,6 +6,7 @@ import {
   Hero,
   Navbar,
   Sales,
+  PopularSales,
   Stories,
 } from "./components";
 import {
@@ -65,7 +66,7 @@ const App = () => {
               <main className="flex flex-col gap-16 relative">
                 <Hero heroapi={heroapi} />
                 <FlexContent endpoint={highlight} ifExists />
-                <Sales endpoint={popularsales} ifExists />
+                <PopularSales endpoint={popularsales} ifExists />
                 <FlexContent endpoint={sneaker} />
                 <Stories story={story} />
               </main>
